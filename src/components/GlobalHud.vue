@@ -40,6 +40,16 @@
 
         <!-- 视图与背景控制 -->
         <div class="flex shrink-0 items-center gap-1.5">
+          <a
+            :href="sandbox3dHref"
+            target="_blank"
+            rel="noopener"
+            class="flex shrink-0 items-center rounded-chip border border-line px-2.5 py-1.5 text-[12px] text-slate-500 transition-colors duration-200 hover:border-line-strong hover:text-brand-800"
+            title="打开模块 05 拓展：生态系统三维推演"
+          >
+            <span class="mr-1.5 font-mono text-[10px] opacity-60">3D</span>
+            生态推演
+          </a>
           <button
             type="button"
             class="icon-btn"
@@ -100,6 +110,9 @@ const props = defineProps({
 })
 
 defineEmits(['setView', 'toggleBg', 'jumpModule'])
+
+// 模块 05 拓展：生态系统三维推演（独立入口页面，新标签打开）
+const sandbox3dHref = `${import.meta.env.BASE_URL}sandbox3d.html`
 
 const modules = [
   { id: 'genesis', short: '理论溯源', name: '理论溯源与进化时间线', idx: 1, available: true },

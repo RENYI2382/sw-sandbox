@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2322456d'/%3E%3Ctext x='50' y='70' font-size='58' font-family='serif' fill='%23ffffff' text-anchor='middle'%3E%E7%A4%BE%3C/text%3E%3C/svg%3E"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f8fa" />
+    <meta
+      name="description"
+      content="许姨案例的生态系统三维推演 · 社会工作理论课程汇报模块 05 拓展入口"
+    />
+    <title>生态系统三维推演 · 许姨案例 | 社会工作理论课程汇报</title>
+  </head>
+  <body>
+    <div class="page3d">
+      <!-- 顶部栏 -->
+      <header class="topbar">
+        <div class="topbar__in">
+          <div class="brand3">
+            <span class="brand3__mark" aria-hidden="true">社</span>
+            <span class="brand3__text">
+              <strong>社会工作理论 · 生态系统理论</strong>
+              <span>深圳大学 · 课程汇报 · 模块 05 拓展</span>
+            </span>
+          </div>
+          <div class="topbar__right">
+            <span class="eyebrow eyebrow--hide-sm">3D ECOSYSTEM SANDBOX</span>
+            <a class="btn btn--ghost" href="./index.html">返回主页面</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="wrap3">
+        <!-- 说明区 -->
+        <section class="intro3">
+          <p class="eyebrow">模块 05 · 生态系统三维推演</p>
+          <h1 class="intro3__title">许姨案例的生态系统 3D 分析场</h1>
+          <p class="intro3__lead">
+            以案主许姨为中心，把案例材料中的 9 个涉及主体安置在微观、中观、外系统、宏系统四层同心环上：
+            拖拽旋转场景、滚轮缩放、点击节点即可查看该主体的角色定位与所属系统；随后按 2025 年的关键事件推进时间线，
+            观察每一阶段被介入的系统层级与主体随之高亮。
+          </p>
+        </section>
+
+        <div class="grid3">
+          <!-- 3D 场景 -->
+          <section class="panel stage-panel" aria-labelledby="stageTitle">
+            <div class="stage-toolbar">
+              <div class="stage-toolbar__left">
+                <h2 class="stage-title" id="stageTitle">生态系统关系图</h2>
+                <span class="chip chip--brand" id="layerBadge">全部层级</span>
+              </div>
+              <div class="stage-toolbar__right">
+                <button type="button" class="icon-btn" id="btnAuto" aria-pressed="false" title="自动旋转">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20 12a8 8 0 1 1-2.6-5.9" />
+                    <path d="M20 4v4h-4" />
+                  </svg>
+                  <span class="icon-btn__text">自动旋转</span>
+                </button>
+                <button type="button" class="icon-btn" id="btnZoomOut" title="缩小" aria-label="缩小">−</button>
+                <button type="button" class="icon-btn" id="btnZoomIn" title="放大" aria-label="放大">+</button>
+                <button type="button" class="icon-btn" id="btnResetView" title="复位视角" aria-label="复位视角">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="7" />
+                    <path d="M12 5v2M12 17v2M5 12h2M17 12h2" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="stage"
+              id="stage"
+              tabindex="0"
+              role="application"
+              aria-label="生态系统三维关系图：可拖拽旋转，点击节点查看主体角色"
+            >
+              <svg class="stage__svg" id="stageSvg" aria-hidden="true">
+                <g id="ringGroup"></g>
+                <g id="linkGroup"></g>
+              </svg>
+              <div class="stage__labels" id="ringLabelLayer" aria-hidden="true"></div>
+              <div class="stage__nodes" id="nodeLayer"></div>
+              <p class="stage__tip" id="stageTip">拖拽旋转 · 滚轮缩放 · 点击节点查看主体角色</p>
+            </div>
+
+            <div class="stage-legend" id="legend"></div>
+          </section>
+
+          <!-- 侧栏：主体详情 + 时间线 -->
+          <aside class="side3">
+            <section class="panel detail3" id="detail" aria-live="polite">
+              <p class="eyebrow">SUBJECT · 选中主体</p>
+              <div class="detail3__body" id="detailBody"></div>
+            </section>
+
+            <section class="panel timeline3">
+              <p class="eyebrow">CASE TIMELINE · 案例全流程演进</p>
+              <div class="tl-steps" id="tlSteps" role="group" aria-label="案例阶段"></div>
+              <div class="tl-controls">
+                <button type="button" class="btn btn--ghost" id="btnPrev">上一步</button>
+                <button type="button" class="btn btn--primary" id="btnPlay" aria-pressed="false">播放</button>
+                <button type="button" class="btn btn--ghost" id="btnNext">下一步</button>
+                <button type="button" class="btn btn--ghost" id="btnResetTl">重置</button>
+              </div>
+              <div class="tl-event" id="tlEvent" aria-live="polite"></div>
+              <div class="tl-highlight" id="tlHighlight"></div>
+            </section>
+          </aside>
+        </div>
+
+        <p class="foot3">
+          数据来源：<code>src/data/sandbox.json</code> 的 <code>caseBackground.subjects</code> /
+          <code>caseBackground.timeline</code> / <code>caseBackground.profile</code>，未新增案例内容；
+          阶段高亮依据事件记载的系统层级与描述关键词自动关联。本页为独立入口，不影响五模块主页面。
+        </p>
+      </main>
+    </div>
+
+    <script type="module" src="/src/sandbox3d/main.js"></script>
+  </body>
+</html>
