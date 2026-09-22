@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   设计令牌：极简教学工具视觉体系
+   底色 #f7f8fa / 卡片纯白 / 分隔线 #e5e8ed / 强调色 深靛蓝 #22456d
+   仅保留一档强调色与一档中性灰阶，去除全部发光与全息特效
+   ========================================================================== */
+:root {
+  --page-bg: #f7f8fa;
+  --content-max: 46rem;
+  --reveal-duration: 0.5s; /* 滚动渐入时长，位于要求的 0.3–0.6s 区间 */
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--page-bg);
+  color: #0f172a;
+  font-family: 'Public Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+blockquote {
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', Georgia, serif;
+}
+
+:focus-visible {
+  outline: 2px solid #22456d;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: rgba(34, 69, 109, 0.14);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d3d9e0;
+  border: 3px solid var(--page-bg);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8c0ca;
+}
+
+/* 视图模式：专注 = 窄栏阅读，紧凑 = 宽栏信息密度更高 */
+main[data-view='focus'] {
+  --content-max: 46rem;
+}
+main[data-view='compact'] {
+  --content-max: 62rem;
+}
+
+@layer components {
+  .panel {
+    @apply relative rounded-panel border border-line bg-white;
+    box-shadow: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  }
+
+  .panel-interactive {
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+
+  .panel-interactive:hover {
+    border-color: #d3d9e0;
+    box-shadow: 0 8px 24px -12px rgba(15, 23, 42, 0.18);
+  }
+
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase;
+    letter-spacing: 0.16em;
+    color: #94a3b8;
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-chip border px-2.5 py-1 text-xs;
+    border-color: #e5e8ed;
+    background-color: #fbfcfd;
+    color: #475569;
+  }
+
+  .chip-brand {
+    border-color: rgba(34, 69, 109, 0.2);
+    background-color: #eff5fb;
+    color: #22456d;
+  }
+
+  .btn {
+    @apply inline-flex select-none items-center justify-center gap-2 rounded-panel px-4 py-2 text-sm font-medium;
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .btn-primary {
+    border: 1px solid #22456d;
+    background-color: #22456d;
+    color: #ffffff;
+  }
+
+  .btn-primary:hover {
+    border-color: #1c3857;
+    background-color: #1c3857;
+    box-shadow: 0 8px 20px -12px rgba(28, 56, 87, 0.8);
+  }
+
+  .icon-btn {
+    @apply inline-flex h-8 w-8 items-center justify-center rounded-chip border bg-white;
+    border-color: #e5e8ed;
+    color: #94a3b8;
+    transition: color 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+  }
+
+  .icon-btn:hover {
+    color: #22456d;
+    border-color: #b8c0ca;
+  }
+
+  .icon-btn.is-active {
+    color: #22456d;
+    border-color: rgba(34, 69, 109, 0.35);
+    background-color: #eff5fb;
+  }
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity var(--reveal-duration) cubic-bezier(0.22, 1, 0.36, 1),
+      transform var(--reveal-duration) cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .bg-grid {
+    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.032) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(15, 23, 42, 0.032) 1px, transparent 1px);
+    background-size: 72px 72px;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* 无动画偏好：直接呈现内容，不做位移与淡入 */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

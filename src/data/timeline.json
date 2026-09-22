@@ -1,0 +1,140 @@
+{
+  "moduleId": "genesis",
+  "title": "理论溯源与进化时间线",
+  "subtitle": "The Genesis · From Social Diagnosis to Ecosystemic Intervention",
+  "anchor": "1917 — 1996",
+  "description": "从单一病理诊断到多维生态嵌套：系统梳理社会工作生态系统理论跨越八十年的范式跃迁脉络。",
+  "timelineAxis": {
+    "startYear": 1917,
+    "endYear": 1996,
+    "milestoneCount": 5
+  },
+  "nodes": [
+    {
+      "id": "n1",
+      "year": 1917,
+      "eraLabel": "PRE-GENESIS",
+      "eraIndex": 0,
+      "title": "玛丽·里士满《社会诊断》",
+      "author": "Mary E. Richmond",
+      "publication": "Social Diagnosis",
+      "coreContribution": "首次在社会工作领域确立\"人在情境中\"(Person-in-Situation)的分析框架，标志社工从纯慈善救济转向系统诊断思维。",
+      "paradigmShift": "从\"个人道德缺陷归因\"转向\"社会因素介入归因\"，为后续系统论植入预留理论接口。",
+      "keyConcepts": [
+        "社会诊断 (Social Diagnosis)",
+        "人在情境中 (Person-in-Situation)",
+        "个案工作专业化"
+      ],
+      "keywords": ["诊断", "情境", "个案", "专业主义"],
+      "impactScore": 82,
+      "significance": "foundational",
+      "quotes": [
+        "\"Social work is the art of doing good scientifically.\"",
+        "\"The first step in social case work is diagnosis.\""
+      ]
+    },
+    {
+      "id": "n2",
+      "year": 1958,
+      "eraLabel": "CROSS-FERTILIZATION",
+      "eraIndex": 1,
+      "title": "赫恩引入一般系统论",
+      "author": "Edgar H. Hearn",
+      "publication": "General Systems Theory and Social Casework",
+      "coreContribution": "将贝塔朗菲(Ludwig von Bertalanffy)的生物学\"一般系统论\"跨界移植至社会工作，提出\"全人\"(Whole Person)概念。",
+      "paradigmShift": "打破医学模式下的线性因果思维，确立\"系统大于部分之和\"的整体论视角。",
+      "keyConcepts": [
+        "一般系统论 (General Systems Theory)",
+        "整体论 (Holism)",
+        "开放系统 (Open System)",
+        "熵与负熵 (Entropy / Negentropy)"
+      ],
+      "keywords": ["系统论", "跨界", "整体论", "开放系统"],
+      "impactScore": 88,
+      "significance": "turning-point",
+      "quotes": [
+        "\"The individual cannot be understood in isolation from the systems in which he lives.\"",
+        "\"Wholeness is not reducible to the sum of its parts.\""
+      ]
+    },
+    {
+      "id": "n3",
+      "year": 1973,
+      "eraLabel": "OPERATIONALIZATION",
+      "eraIndex": 2,
+      "title": "平卡斯与米纳汉四大基本系统",
+      "author": "Allen Pincus & Ann Minahan",
+      "publication": "Social Work Practice: Model and Method",
+      "coreContribution": "确立系统论在社工实务中可操作的四大基本系统：改变媒介系统、案主系统、目标系统、行动系统。",
+      "paradigmShift": "完成从抽象理论到实务流程的转化，系统论从此具备可训练、可评估的操作框架。",
+      "keyConcepts": [
+        "改变媒介系统 (Change Agent System)",
+        "案主系统 (Client System)",
+        "目标系统 (Target System)",
+        "行动系统 (Action System)"
+      ],
+      "keywords": ["实务模式", "四系统", "干预", "操作化"],
+      "impactScore": 94,
+      "significance": "cornerstone",
+      "quotes": [
+        "\"Four systems constitute the conceptual framework of all social work practice.\"",
+        "\"The change agent must map all four systems before any intervention.\""
+      ]
+    },
+    {
+      "id": "n4",
+      "year": 1979,
+      "eraLabel": "ECOLOGICAL REFRAMING",
+      "eraIndex": 3,
+      "title": "布朗芬布伦纳生态嵌套模型",
+      "author": "Urie Bronfenbrenner",
+      "publication": "The Ecology of Human Development",
+      "coreContribution": "提出\"微系统-中系统-外系统-宏系统-历时系统\"的同心圆嵌套模型，为系统层级提供精准拓扑定义；四个系统之间存在交互耦合的联系与影响，人的发展来自人与环境的持续相互作用（Bronfenbrenner, 1979；刘杰 & 孟会敏, 2009）。",
+      "paradigmShift": "从\"并列系统\"升级为\"嵌套层级系统\"，干预空间从二维平面拓展至三维立体结构。",
+      "keyConcepts": [
+        "微系统 (Microsystem)",
+        "中系统 (Mesosystem)",
+        "外系统 (Exosystem)",
+        "宏系统 (Macrosystem)",
+        "历时系统 (Chronosystem)"
+      ],
+      "keywords": ["嵌套", "层级", "同心圆", "生态"],
+      "impactScore": 96,
+      "significance": "cornerstone",
+      "quotes": [
+        "\"Development occurs through progressively more complex interactions between the developing person and the environment.\"",
+        "\"Every system contains other systems, and is contained by still larger ones.\""
+      ]
+    },
+    {
+      "id": "n5",
+      "year": 1980,
+      "eraLabel": "PRACTICE MATURITY",
+      "eraIndex": 4,
+      "title": "杰曼与吉特曼生命模式",
+      "author": "Carel B. Germain & Alex Gitterman",
+      "publication": "The Life Model of Social Work Practice",
+      "coreContribution": "整合生态学视角与生命周期理论，提出\"生活压力源三维分类\"与\"社工角色三阶段流转\"，标志生态系统理论实务模式成熟（Germain & Gitterman, 1980）。",
+      "paradigmShift": "社工角色从\"治疗者\"彻底转向\"联结修复者\"，干预目标从\"修复个人\"转变为\"提升人与环境的契合度\"。",
+      "keyConcepts": [
+        "生活转变 (Life Transitions)",
+        "环境压迫 (Environmental Pressures)",
+        "人际冲突 (Interpersonal Dissonances)",
+        "使能者-中介者-倡导者 (Enabler → Mediator → Advocate)"
+      ],
+      "keywords": ["生命模式", "压力源", "角色流转", "契合度"],
+      "impactScore": 97,
+      "significance": "culmination",
+      "quotes": [
+        "\"The goal of social work is to improve the fit between people and their environments.\"",
+        "\"Social workers do not fix people—they repair the connections between people and the systems that sustain them.\""
+      ]
+    }
+  ],
+  "epilogue": {
+    "year": 1996,
+    "title": "Pardeck 七步干预法与后续演进",
+    "summary": "1996年John T. Pardeck将上述脉络整合为七步生态干预流程，同时数字社会工作研究开始关注算法生态排斥、线上社会资本等新变量，理论仍在持续演进中。",
+    "nextModuleTeaser": "下一模块：核心假设与力学拆解 — 将三大底层假设转化为可交互的受力分析拓扑图。"
+  }
+}

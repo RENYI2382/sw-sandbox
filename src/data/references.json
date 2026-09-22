@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ref-bronfenbrenner-1979",
+    "authors": "Bronfenbrenner, U.",
+    "title": "The Ecology of Human Development: Experiments by Nature and Design",
+    "titleZh": "人类发展生态学",
+    "year": "1979",
+    "source": "Harvard University Press",
+    "type": "book",
+    "moduleRefs": ["genesis", "corelogic"]
+  },
+  {
+    "id": "ref-germain-1980",
+    "authors": "Germain, C. B., & Gitterman, A.",
+    "title": "The Life Model of Social Work Practice",
+    "titleZh": "社会工作实务的生命模式",
+    "year": "1980",
+    "source": "Columbia University Press",
+    "type": "book",
+    "moduleRefs": ["genesis", "corelogic", "academic"]
+  },
+  {
+    "id": "ref-fu-2009",
+    "authors": "付立华",
+    "title": "社会生态系统理论视角下的社区矫正与和谐社区建设",
+    "year": "2009",
+    "source": "中国人口·资源与环境, 19(4): 125-128",
+    "type": "journal",
+    "moduleRefs": ["global"]
+  },
+  {
+    "id": "ref-liu-2009",
+    "authors": "刘杰, 孟会敏",
+    "title": "关于布郎芬布伦纳发展心理学生态系统理论",
+    "year": "2009",
+    "source": "中国健康心理学杂志, 17(2): 250-252",
+    "type": "journal",
+    "moduleRefs": ["genesis", "corelogic"]
+  },
+  {
+    "id": "ref-zhuo-2013",
+    "authors": "卓彩琴",
+    "title": "生态系统理论在社会工作领域的发展脉络及展望",
+    "year": "2013",
+    "source": "江海学刊, 2013(3)",
+    "type": "journal",
+    "moduleRefs": ["global"]
+  },
+  {
+    "id": "ref-yu-2018",
+    "authors": "俞国良, 李建良, 王勍",
+    "title": "生态系统理论与青少年心理健康教育",
+    "year": "2018",
+    "source": "教育研究",
+    "type": "journal",
+    "moduleRefs": ["corelogic", "academic"]
+  },
+  {
+    "id": "ref-singh-2022",
+    "authors": "Singh, P. S. J., & Azman, A.",
+    "title": "System Theory and Ecological Approach in Social Work Practice: An Actual Case Illustration",
+    "year": "2022",
+    "source": "Asian Social Work Journal, 7(6): 24-33",
+    "type": "journal",
+    "moduleRefs": ["sandbox"]
+  },
+  {
+    "id": "ref-chiarelli-2022",
+    "authors": "Chiarelli-Helminiak, C. M., McDonald, K. W., Tower, L. E., et al.",
+    "title": "Burnout among social work educators: an eco-logical systems perspective",
+    "year": "2022",
+    "source": "Journal of Human Behavior in the Social Environment",
+    "type": "journal",
+    "moduleRefs": ["sandbox"]
+  },
+  {
+    "id": "ref-yang-2025",
+    "authors": "杨超, 刘梅秀",
+    "title": "关系主义视域下社会工作生态系统理论的再整合",
+    "year": "2025",
+    "source": "华东理工大学学报（社会科学版）, 2025(2)",
+    "type": "journal",
+    "moduleRefs": ["global"]
+  },
+  {
+    "id": "ref-li-2026",
+    "authors": "Li, Y., Shi, S., Lu, Y., et al.",
+    "title": "The burden and needs of primary caregivers in home-based palliative care: a qualitative study based on social-ecological systems theory",
+    "year": "2026",
+    "source": "BMC Palliative Care, 25: 61",
+    "type": "journal",
+    "moduleRefs": ["sandbox"]
+  }
+]
